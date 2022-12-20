@@ -1,0 +1,21 @@
+{
+    "builders": [
+        {
+            "ami_name"      :   "alpha-ion-ami-{{timestamp}}",
+            "instance_type" :   "t2.micro",
+            "region"        :   "ap-south-1",
+            "source_ami"    :   "ami-03d3eec31be6ef6f9",
+            "tags"  :   {
+                "Name"  :   "packer_ami"
+            },
+            "ssh_username"  :   "ubuntu",
+            "type"          :   "amazon-ebs"
+        }
+    ],
+    "provisioners"  :   [
+        {
+            "type"      :   "shell",
+            "script"    :   "./build-customAMI.sh"
+        }
+    ]
+}
