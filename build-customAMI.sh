@@ -9,3 +9,4 @@ sudo apt-get install tomcat9 -y
 cd /var/lib/tomcat9/webapps/
 sudo wget https://devops-test1509.s3.ap-south-1.amazonaws.com/myapp.war
 sudo systemctl start tomcat9
+sudo systemctl restart tomcat9
