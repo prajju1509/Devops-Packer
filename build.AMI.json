@@ -4,7 +4,7 @@
             "ami_name"      :   "alpha-ion-ami-{{timestamp}}",
             "instance_type" :   "t2.micro",
             "region"        :   "ap-south-1",
-            "source_ami"    :   "ami-03d3eec31be6ef6f9",
+            "source_ami"    :   "ami-0f69bc5520884278e",
             "tags"  :   {
                 "Name"  :   "packer_ami"
             },
